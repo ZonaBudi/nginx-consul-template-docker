@@ -8,4 +8,3 @@ RUN apt-get install -y nano wget curl zip unzip software-properties-common local
 RUN wget https://releases.hashicorp.com/consul-template/0.25.0/consul-template_0.25.0_linux_amd64.zip&&unzip consul-template_0.25.0_linux_amd64.zip && chmod +x consul-template && ln -sf $PWD/consul-template /usr/local/bin
 
 EXPOSE 80
-ENTRYPOINT ["service nginx start"]
